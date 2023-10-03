@@ -18,8 +18,8 @@ const page = () => {
         
         <div className=' w-full grid grid-cols-1 px-[2em] lg:px-[10em] md:grid-cols-2 gap-5'>
             <div className=' shadow-lg bg-grey-100 p-6 rounded-lg my-5  w-full'>
-                <h1 className=' primary text-center text-[1.5em] md:text-[3em] font-bold'>Admission Procedure Into Coronation Prep Academy</h1>
-                <p className=' px-3 py-1 w-[10%] rounded-full bg-red-400'></p>
+                <h1 className=' primary text-center text-[1.5em] underline md:text-[3em] font-bold'>Admission Procedure Into Coronation Prep Academy</h1>
+                <p className=' px-3 py-1 w-[25%] rounded-full bg-red-400'></p>
                 <div className=' py-4 my-4 leading-8 '>
                     <p>Sales of admission forms start in January every year and can be purchased in the school or through our online platform. The child must have completed at least 5 years or its equivalent in a standard and accredited elementary school either in Nigeria or Abroad. The admission form must be filled and submitted with the following documents:</p>
                 </div>

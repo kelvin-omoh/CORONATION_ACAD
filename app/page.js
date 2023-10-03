@@ -48,23 +48,25 @@ At Coronation Prep Academy, we believe that knowledge is the key to building bri
     backgroundPosition: 'center',
  
 
-  }}className=' p-4  h-full  md:h-[100vh] flex flex-col md:flex-row gap-[1.2em] w-full'>
+  }} className=' p-4 grid-cols-1 lg:grid-cols-3 h-full   grid grid-col  flex-col md:flex-row gap-[1.2em] w-full'>
   {/* CARD */}
   <div className=' bg-[#ffffffd1] flex flex-col gap-2 p-4 rounded-md'>
-    <div className=' h-[28em] w-[20em]'>
-          <Image src='/propitor.jpeg'   className='object-cover  h-full    text-center w-full mx-auto ' height={200} width={400} alt='' />
+    <div className=' h-[28em] mx-auto w-[20em]'>
+          <Image src='/propitor.jpeg'   className='object-cover  rounded-lg h-full    text-center w-full mx-auto ' height={200} width={400} alt='' />
 
     </div>
-    <h1 className='font-semibold'>Yahaya Usman Saratu </h1>
-    <h3 className=' font-bold text-[1.2em] underline '>Proprietress / CEO</h3>
-    <p className='text-left tex-w leading-9 w-full md:w-[30vw]'>
+    <h1 className=' mx-auto font-semibold'>Yahaya Usman Saratu </h1>
+    <h3 className='mx-auto font-bold text-[1.2em] underline '>Proprietress / CEO</h3>
+    <p className='text-left tex-w leading-9 w-full lg:w-[30vw]'>
         Allow me to introduce you to <span className='font-bold text-[1.1em] primary'>CORONATION PREP ACADEMY,</span> a beacon of academic excellence. I extend a warm welcome to both you and your child. Our institution enjoys a stellar reputation, cherished by parents and students alike. Before we proceed, I want to express my profound gratitude to the Almighty Allah for His continuous grace, mercy, and inspiration that have led to the establishment of this esteemed school.
     </p>
 </div>
+ 
   
     <div className='text-left tex-start bg-white p-5 leading-9'>
+      
       <h1 className=' primary font-bold text-[1.8em] underline text-center mb-8 '>Choose Coronation Prep Academy and Embark on a Remarkable Journey</h1>
-      <ul className=' list-disc'>
+      <ul className=' list-disc '>
         <li> <span className=' font-bold'>Diverse Curriculum:</span> We offer a diverse and comprehensive curriculum that prepares students for a wide range of academic and career paths.</li>
         <li> <span className=' font-bold'>Global Perspective:</span>Our institution promotes a global perspective through international exchange programs, fostering cultural understanding and global citizenship.</li>
         <li> <span className=' font-bold'>Inclusive Education: </span>We are committed to inclusive education, ensuring that every student's unique learning needs are met.</li>
@@ -99,20 +101,35 @@ At Coronation Prep Academy, we believe that knowledge is the key to building bri
       
 </div>
 
+<div className=' bg-[#ffffffd1] flex flex-col gap-2 p-4 rounded-md'>
 
+<div className=' bg-[#ffffffd1] flex flex-col gap-2 p-4 rounded-md'>
+    <div className=' h-[28em] mx-auto w-[20em]'>
+    <Image src='/principal.jpeg'  className='object-cover  rounded-lg h-full    text-center w-full mx-auto ' height={200} width={400} alt='' />
+
+    </div>
+    <h3 className=' mx-auto text-center font-semibold'>Mr James Arllo</h3>
+    <h3 className='mx-auto font-bold text-[1.2em] underline '>Principal</h3>
+    <p className='text-left tex-w leading-9 w-full md:w-[30vw]'>
+    I am deeply committed to providing our students with a nurturing and enriching learning environment. Our dedicated team of educators, staff, and I work tirelessly to ensure that every student's potential is unlocked, and their dreams are nurtured. We believe in fostering not just academic excellence but also character development, as we prepare our students to become responsible and compassionate individuals ready to excel in a rapidly changing world. Together, we inspire a brighter future for every student who walks through our doors.   </p>
+</div>
+   
+    
+   
+</div>
 </div>
 
 
 <section className=' px-[2em] gap-[5em] flex-col md:flex-row   justify-center items-center  lg:px-[10em] mt-[5em] flex w-full'>
     <div className=' flex justify-center items-center flex-col gap-4'>
-    <div className=' p-[3rem] delay-300 ease-in-out  transition-all  bg-[#8000805e] rounded-full'>
+    <div className=' p-[1.5rem] lg:p-[3rem] delay-300 ease-in-out  transition-all  bg-[#8000805e] rounded-full'>
       <FaGraduationCap className=' primary' size={40}/>
       </div>
-      <h2 className='primary font-bold  uppercase text-[1.5rem]'>PRE - ELEMENTARY SCHOOL</h2>
+      <h2 className='primary font-bold justify-center text-center mx-auto  uppercase text-[1.5rem]'>PRE - ELEMENTARY SCHOOL</h2>
       <p className=' leading-9'>The children in Early Years and Foundation stage are between 1 and 4 years. This is an important stage in every child’s life and development. We are aware of this and we have made learning as fun as possible.</p>
     </div>
     <div className=' flex justify-center items-center flex-col gap-4'>
-      <div className=' p-[3rem] bg-[#8000805e] rounded-full'>
+      <div className=' p-[1.5rem] lg:p-[3rem] bg-[#8000805e] rounded-full'>
            <FaBook  className=' primary' size={40}/>
       </div>
    
@@ -120,7 +137,7 @@ At Coronation Prep Academy, we believe that knowledge is the key to building bri
       <p className=' leading-9'>The child seeking admission into the elementary school must be at least six (6) years of age on or before August 31st of the year of admission for our Elementary 1 class.</p>
     </div>
     <div className=' flex justify-center items-center flex-col gap-4'>
-      <div className=' p-[3rem] bg-[#8000805e] rounded-full'>
+      <div className=' p-[1.5rem] lg:p-[3rem] bg-[#8000805e] rounded-full'>
            <FaSchool  className=' primary' size={40}/>
       </div>
    
