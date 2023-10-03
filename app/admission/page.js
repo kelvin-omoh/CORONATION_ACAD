@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const page = () => {
@@ -6,7 +7,7 @@ const page = () => {
          
 
           <div className=' w-full'> 
-            <img  src={'/contact.png'} className='   z-[0]  w-full h-[15em] md:h-[30em] ' alt={''}/>
+          <Image width={900} height={9000} src={'/contact.png'}  className='   z-[0]  w-full h-[15em] md:h-[30em] ' alt={''}/>
             <div className=' absolute text-white   top-[20%] md:top-[30%] px-[5em]'>
             <h1 className='text-[2em] md:text-[3em] font-semibold'> Admissions </h1>
             <p className='text-[1em] md:text-[1.5em]'> <span className=' font-bold text-red-400 '>Home - </span> Admission Procedures</p>
@@ -24,9 +25,9 @@ const page = () => {
                     <p>Sales of admission forms start in January every year and can be purchased in the school or through our online platform. The child must have completed at least 5 years or its equivalent in a standard and accredited elementary school either in Nigeria or Abroad. The admission form must be filled and submitted with the following documents:</p>
                 </div>
                 <div className=' relative'>
-                      <img  src={'/ad.jpg'} className='   z-[0]  w-full h-[15em] md:h-[30em] ' alt={''}/>
+                <Image width={900} height={9000} src={'/ad.jpg'} className='   z-[0]  w-full h-[15em] md:h-[30em] ' alt={''}/>
                       <div className=' absolute  top-[30%]   from-white to-purple-500  flex-row flex md:flex-col justify-center items-center '>
-                          <img  src={'/logo.jpeg'} className='   z-[0]  w-[40%] md:w-[5em] top-[50%] mx-7   h-[2em] md:h-[5em] ' alt={''}/>
+                      <Image width={900} height={9000}  src={'/logo.jpeg'} className='   z-[0]  w-[40%] md:w-[5em] top-[50%] mx-7   h-[2em] md:h-[5em] ' alt={''}/>
                     
                 <h1 className=' font-[fantasy] font-extrabold text-[2em] md:font-bold lg:text-[5em] bg-gradient-to-r from-white to-[#c616c6] text-transparent bg-clip-text '>Admission Procedure</h1>
                       </div>

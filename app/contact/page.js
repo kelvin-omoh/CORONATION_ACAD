@@ -1,4 +1,5 @@
 import Header from '@/components/Header'
+import Image from 'next/image'
 import React from 'react'
 import { FaFacebook, FaFacebookSquare, FaGoogle, FaInstagram, FaLocationArrow, FaMailBulk, FaMapPin, FaPhone } from 'react-icons/fa'
 
@@ -7,7 +8,7 @@ const page = () => {
     <> <Header/>
     <div className=' relative mt-[5.6em]'>
         
-        <img  src={'/contact.png'} className='   z-[0]  w-full h-[20em] md:h-[40em] ' alt={''}/>
+    <Image width={900} height={9000} src={'/contact.png'} className='   z-[0]  w-full h-[20em] md:h-[40em] ' alt={''}/>
         <div  className=' z-[50]  absolute  top-[5%] md:top-[10%] w-full  px-9   text-white h-[30vh] '  >
             
             <h1 className=' text-[3.2em] md:text-[5.4em]'>Get In Touch</h1>

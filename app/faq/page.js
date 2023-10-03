@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Faq from "react-faq-component";
 
@@ -54,7 +55,7 @@ const config = {
     <div className=' py-[4em] w-full'>
 
 <div className=' w-full'> 
-            <img  src={'/contact.png'} className='   z-[0]  w-full h-[15em] md:h-[30em] ' alt={''}/>
+<Image width={900} height={9000}  src={'/contact.png'} className='   z-[0]  w-full h-[15em] md:h-[30em] ' alt={''}/>
             <div className=' absolute text-white   top-[20%] md:top-[30%] px-[5em]'>
             <h1 className='text-[2em] md:text-[3em] font-semibold'> Admissions </h1>
             <p className='text-[1em] md:text-[1.5em]'> <span className=' font-bold text-red-400 '>Home - </span> Frequentky Asked Questions</p>
