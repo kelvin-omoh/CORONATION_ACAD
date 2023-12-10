@@ -58,7 +58,7 @@ const config = {
 <Image width={900} height={9000}  src={'/contact.png'} className='   z-[0]  w-full h-[15em] md:h-[30em] ' alt={''}/>
             <div className=' absolute text-white   top-[20%] md:top-[30%] px-[5em]'>
             <h1 className='text-[2em] md:text-[3em] font-semibold'> Admissions </h1>
-            <p className='text-[1em] md:text-[1.5em]'> <span className=' font-bold text-red-400 '>Home - </span> Frequentky Asked Questions</p>
+            <p className='text-[1em] md:text-[1.5em]'> <span className=' font-bold text-red-400 '>Home - </span> Frequently Asked Questions</p>
             </div>
             <div className=" md:w-[50%] w-[100%] px-7 mx-auto my-6  py-6 rounded-lg shadow-lg ">
                 <Faq

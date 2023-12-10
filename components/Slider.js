@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 const Slider = () => {
   return (
-    <div className='w-[100%] relative'>
+    <div className={` w-[100%] relative hidden md:block`}>
       <Carousel
         interval={3000} // Set the autoplay interval to 3 seconds (adjust as needed)
         infiniteLoop={true}

@@ -1,24 +1,37 @@
+// 'use client'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Slider from '@/components/Slider'
 import Image from 'next/image'
+// import { useEffect } from 'react'
 import { FaBook, FaGraduationCap, FaSchool } from 'react-icons/fa'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+// useEffect(()=>{
+//   AOS.init();
+// },[])
 export default function Home() {
   return (
-   <div >
+   <div     data-aos="fade-up"
+   data-aos-offset="200"
+   data-aos-delay="50" >
 
      <Slider />
+     <div className=' mt-[11em]'>
+      <img  data-aos="zoom-in"
+   data-aos-offset="200"
+   data-aos-delay="50"  className=' h-[9em] mx-auto' src="./logo.jpeg" alt="" />
+     </div>
      <div    className='  py-4 '>
       <div className=' px-[2em]  md:px-[10em]'>
- <h2  className=' primary text-center text-[1.5em] md:text-[3em] font-bold'> WELCOME TO CORONATION PREP ACADEMY </h2>
+ <h2  className=' primary text-center text-[1.5em] md:text-[3em] font-sans font-bold'> WELCOME TO CORONATION PREP ACADEMY </h2>
 
- <div>
- <p  className=' text-[1em] md:text-[1.3em] py-3 text-start md:text-justify leading-8 md:leading-9'>
+ <div className=' mt-[1em] md:m-0 '>
+ <p   className=' text-[1em] md:text-[1.3em] py-3 text-start md:text-justify leading-8 md:leading-9'>
 
  Coronation Prep Academy is a distinguished educational institution, deeply committed to fostering the growth and development of young minds in our beautiful and serene campus located in [ behind Kuje Stadium, 900105, Kuje,Abuja,Nigeria ]. Our motto, &quot;Knowledge Builds Bridges,&quot; encapsulates our dedication to providing a strong foundation of learning that bridges the gap between today&lsquo;s educational journey and the future of our students.
 </p>
-<p className=' text-[1em] md:text-[1.3em] py-3 text-start md:text-justify leading-8 md:leading-9'>
+<p  className=' text-[1em] md:text-[1.3em] py-3 text-start md:text-justify leading-8 md:leading-9'>
 
 As a private, co-educational, and independent day-school, we cater to a diverse student body, welcoming pupils of any nationality. Our educational programs span from Crèche, Pre-Elementary through Elementary levels, ensuring a holistic and comprehensive learning experience. Our Crèche and Pre-Elementary classes cater to children aged between 5 months and 5 years, while the Elementary School nurtures students aged 6 to 10 years.
 </p>
@@ -41,7 +54,8 @@ At Coronation Prep Academy, we believe that knowledge is the key to building bri
 
       </div>
      
-<div   style={{
+<div  id='about'
+    style={{
     background: `url(./show.jpg)`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
@@ -50,9 +64,14 @@ At Coronation Prep Academy, we believe that knowledge is the key to building bri
 
   }} className=' p-4 grid-cols-1 lg:grid-cols-3 h-full   grid grid-col  flex-col md:flex-row gap-[1.2em] w-full'>
   {/* CARD */}
-  <div className=' bg-[#ffffffd1] flex flex-col gap-2 p-4 rounded-md'>
+  <div   className=' bg-[#ffffffd1] flex flex-col gap-2 p-4 rounded-md'>
     <div className=' h-[28em] mx-auto w-[20em]'>
-    <Image width={900} height={9000} src='/propitor.jpeg'   className='object-cover  rounded-lg h-full    text-center w-full mx-auto '  alt='' />
+    <Image data-aos="fade-up"
+    data-aos-offset="200"
+  
+    data-aos-easing="ease-in-out"
+  
+     width={900} height={9000} src='/propitor.jpeg'   className='object-cover  rounded-lg h-full    text-center w-full mx-auto '  alt='' />
 
     </div>
     <h1 className=' mx-auto font-semibold'>Yahaya Usman Saratu </h1>
@@ -63,9 +82,12 @@ At Coronation Prep Academy, we believe that knowledge is the key to building bri
 </div>
  
   
-    <div className='text-left tex-start bg-white p-5 leading-9'>
+    <div data-aos="zoom-in-up"
+    data-aos-offset="200"
+  
+    data-aos-easing="ease-in-out" className='text-left tex-start bg-white p-5 leading-9'>
       
-      <h1 className=' primary font-bold text-[1.8em] underline text-center mb-8 '>Choose Coronation Prep Academy and Embark on a Remarkable Journey</h1>
+      <h1  className=' primary font-bold text-[1.8em] underline text-center mb-8 '>Choose Coronation Prep Academy and Embark on a Remarkable Journey</h1>
       <ul className=' list-disc '>
         <li> <span className=' font-bold'>Diverse Curriculum:</span> We offer a diverse and comprehensive curriculum that prepares students for a wide range of academic and career paths.</li>
         <li> <span className=' font-bold'>Global Perspective:</span>Our institution promotes a global perspective through international exchange programs, fostering cultural understanding and global citizenship.</li>
@@ -104,13 +126,16 @@ At Coronation Prep Academy, we believe that knowledge is the key to building bri
 <div className=' bg-[#ffffffd1] flex flex-col gap-2 p-4 rounded-md'>
 
 <div className=' bg-[#ffffffd1] flex flex-col gap-2 p-4 rounded-md'>
-    <div className=' h-[28em] mx-auto w-[20em]'>
-    <Image width={900} height={9000}src='/principal.jpeg'  className='object-cover  rounded-lg h-full    text-center w-full mx-auto '  alt='' />
+    <div className=' h-[28em] mx-auto w-[18em]'>
+    <Image data-aos="fade-up"
+    data-aos-offset="200"
+  
+    data-aos-easing="ease-in-out" width={900} height={9000}src='/principal.jpeg'  className='object-cover  rounded-lg h-full    text-center w-full mx-auto '  alt='' />
 
     </div>
     <h3 className=' mx-auto text-center font-semibold'>Mr James Arllo</h3>
     <h3 className='mx-auto font-bold text-[1.2em] underline '>Principal</h3>
-    <p className='text-left tex-w leading-9 w-full md:w-[30vw]'>
+    <p className='text-left  tex-w leading-9 w-full md:w-[30vw]'>
     I am deeply committed to providing our students with a nurturing and enriching learning environment. Our dedicated team of educators, staff, and I work tirelessly to ensure that every student&lsquo;s potential is unlocked, and their dreams are nurtured. We believe in fostering not just academic excellence but also character development, as we prepare our students to become responsible and compassionate individuals ready to excel in a rapidly changing world. Together, we inspire a brighter future for every student who walks through our doors.   </p>
 </div>
    
@@ -120,7 +145,10 @@ At Coronation Prep Academy, we believe that knowledge is the key to building bri
 </div>
 
 
-<section className=' px-[2em] gap-[5em] flex-col md:flex-row   justify-center items-center  lg:px-[10em] mt-[5em] flex w-full'>
+<section data-aos="fade-up-left"
+    data-aos-offset="200"
+  
+    data-aos-easing="ease-in-out" className=' px-[2em] gap-[5em] flex-col md:flex-row   justify-center items-center  lg:px-[10em] mt-[5em] flex w-full'>
     <div className=' flex justify-center items-center flex-col gap-4'>
     <div className=' p-[1.5rem] lg:p-[3rem] delay-300 ease-in-out  transition-all  bg-[#8000805e] rounded-full'>
       <FaGraduationCap className=' primary' size={40}/>
@@ -147,7 +175,7 @@ At Coronation Prep Academy, we believe that knowledge is the key to building bri
   </section>
 
 
-     <section className=' px-[0em] lg:px-[10em] mt-[5em] w-full'>
+     <section   className=' px-[0em] lg:px-[10em] mt-[5em] w-full'>
 
         <div>
         <h1 className=' underline primary font-bold text-[1.8em]  text-center mb-8 '>
@@ -157,24 +185,39 @@ At Coronation Prep Academy, we believe that knowledge is the key to building bri
 
       {/* cards  */}
       <div className='  flex w-full flex-col justify-center md:justify-start items-center md:items-start   md:flex-row  px-3   overflow-x-scroll  gap-8  '>
-      <div className=' w-fit  '>
+      <div data-aos="fade-up-right"
+    data-aos-offset="200"
+  
+    data-aos-easing="ease-in-out" className=' w-fit  '>
       <Image width={900} height={9000} src="/environment.jpeg" className='  rounded-lg max-h-[15em]  h-[15em] w-[20em] max-w-[20em] ' alt="" />
             <p className=' px-2 font-semibold text-center w-full py-4'> Conducive environment</p>
           </div>
-          <div className='  w-fit'>
+          <div data-aos="fade-up-right"
+    data-aos-offset="200"
+  
+    data-aos-easing="ease-in-out" className='  w-fit'>
           <Image width={900} height={9000} src="/classRoom.jpeg" className=' rounded-lg max-h-[15em] h-[15em] w-[20em] max-w-[20em] ' alt="" />
             <p className=' px-2 font-semibold text-center w-full py-4'> Good Learning environronment <br /> / Class Room</p>
           </div>
          
-          <div className='  w-fit'>
+          <div data-aos="fade-up-right"
+    data-aos-offset="200"
+  
+    data-aos-easing="ease-in-out" className='  w-fit'>
           <Image width={900} height={9000} src="/bus.jpeg" className=' rounded-lg max-h-[15em] h-[15em] w-[20em] max-w-[20em] ' alt="" />
             <p className=' mx-auto font-semibold text-center w-full py-4'> Bus services</p>
           </div>
-          <div className='  w-fit'>
+          <div data-aos="fade-up-right"
+    data-aos-offset="200"
+  
+    data-aos-easing="ease-in-out" className='  w-fit'>
           <Image width={900} height={9000} src="/ict.jpeg" className=' rounded-lg max-h-[15em] h-[15em] w-[20em] max-w-[20em] ' alt="" />
             <p className=' mx-auto font-semibold text-center w-full py-4'> Well equipped Ict Lab</p>
           </div>
-          <div className='  w-fit'>
+          <div data-aos="fade-up-right"
+    data-aos-offset="200"
+  
+    data-aos-easing="ease-in-out" className='  w-fit'>
           <Image width={900} height={9000} src="/building.jpeg" className=' rounded-lg max-h-[15em] h-[15em] w-[20em] max-w-[20em] ' alt="" />
             <p className=' mx-auto font-semibold text-center w-full py-4'> Football pitch & Fun center</p>
           </div>

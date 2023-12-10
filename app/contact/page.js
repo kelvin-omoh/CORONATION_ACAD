@@ -53,7 +53,7 @@ const page = () => {
                   
                     </div>
                     <div>
-                          <p className=' space-y-5'>coronationprepacademy@gmail.com</p>
+                          <p className=' space-y-5 text-sm'>coronationprepacademy@gmail.com</p>
                     </div>
 
                 </div>

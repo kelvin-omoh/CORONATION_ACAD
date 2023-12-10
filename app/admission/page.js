@@ -10,7 +10,7 @@ const page = () => {
           <Image width={900} height={9000} src={'/contact.png'}  className='   z-[0]  w-full h-[15em] md:h-[30em] ' alt={''}/>
             <div className=' absolute text-white   top-[20%] md:top-[30%] px-[5em]'>
             <h1 className='text-[2em] md:text-[3em] font-semibold'> Admissions </h1>
-            <p className='text-[1em] md:text-[1.5em]'> <span className=' font-bold text-red-400 '>Home - </span> Admission Procedures</p>
+            <p className='text-[1em]  md:text-[1.5em]'> <span className=' font-bold text-red-400 '>Home - </span> Admission Procedures</p>
             </div>
            
        
@@ -20,7 +20,7 @@ const page = () => {
         <div className=' w-full grid grid-cols-1 px-[2em] lg:px-[10em] md:grid-cols-2 gap-5'>
             <div className=' shadow-lg bg-grey-100 p-6 rounded-lg my-5  w-full'>
                 <h1 className=' primary text-center text-[1.5em] underline md:text-[3em] font-bold'>Admission Procedure Into Coronation Prep Academy</h1>
-                <p className=' px-3 py-1 w-[25%] rounded-full bg-red-400'></p>
+                <p className=' px-3 py-1 w-[25%] rounded-full hidden md:block bg-red-400'></p>
                 <div className=' py-4 my-4 leading-8 '>
                     <p>Sales of admission forms start in January every year and can be purchased in the school or through our online platform. The child must have completed at least 5 years or its equivalent in a standard and accredited elementary school either in Nigeria or Abroad. The admission form must be filled and submitted with the following documents:</p>
                 </div>
@@ -48,7 +48,7 @@ const page = () => {
               
             </div>
         <div>
-           <div className=' bg-green-200 mt-3 p-4 rounded-md shadow-lg'>
+           <div className=' hidden bg-green-200 mt-3 p-4 rounded-md shadow-lg'>
             <h1 className=' primary text-center text-[1.5em] md:text-[3em] font-bold'>Admission Form <br /> Price</h1>
             <h1 className=' primary text-center text-[1.5em] md:text-[3em] font-bold'>N10,000.00</h1>
             <button className=' bg-white primary text-[1.3em] hover:bg-slate-500 cursor-not-allowed hover:text-white w-full  p-7 rounded-lg my-6'>GET OFFLINE FORM</button>

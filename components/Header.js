@@ -37,7 +37,13 @@ const Header = () => {
                 
                 <ul className={`flex flex-col fixed w-full right-0 top-[5.6em] bg-[#130329e5] p-8 rounded-lg z-[100] justify-between gap-10 items-center   ${!hambugger ? 'left-[400em]  transition-all duration-300   delay-100 ': '  transition-all ease-in   duration-300   delay-100 left-0'}   `}>
                 <Link href={'/'}> <li onClick={()=>setHambuger(!hambugger)} className=' hover:font-bold transition-all delay-100 hover:text-[1.5em]'>HOME</li></Link>
-                <Link href={'/#about'}><li onClick={()=>setHambuger(!hambugger)} className=' hover:font-bold transition-all delay-100 hover:text-[1.5em]'>ABOUT</li></Link>
+                <Link  href={'#about'}   >
+                    <li onClick={(e)=>{
+                      setHambuger(!hambugger)
+                      window.location.href="#about"
+                      }}  
+
+ className=' hover:font-bold transition-all delay-100 hover:text-[1.5em]'>ABOUT</li></Link>
                <Link href={'/contact'}> <li onClick={()=>setHambuger(!hambugger)}  className=' hover:font-bold transition-all delay-100 hover:text-[1.5em]'>CONTACT</li></Link>
                 <Link href={'/admission'}><li  onClick={()=>setHambuger(!hambugger)} className=' hover:font-bold transition-all delay-100 hover:text-[1.5em]'>ADMISSIONS</li></Link>
                 <Link href={'/faq'}><li onClick={()=>setHambuger(!hambugger)}  className=' hover:font-bold transition-all delay-100 hover:text-[1.5em]'>FAQ</li></Link>

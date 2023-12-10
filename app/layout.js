@@ -5,6 +5,8 @@ import { Inter } from 'next/font/google'
 import Footer from '@/components/Footer'
 import {  usePathname } from 'next/navigation'
 import { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,10 +16,14 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     const handleRouteChange = () => {
       window.scrollTo(0, 0);
+
     };
 
     handleRouteChange()
   }, [path]);
+  useEffect(()=>{
+    AOS.init();
+  },[])
 
   return (
     <html lang="en">
